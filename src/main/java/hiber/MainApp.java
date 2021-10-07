@@ -31,6 +31,14 @@ public class MainApp {
             System.out.println();
         }
 
+        User queryByCarResult = userService.getUserByCarModelAndSeries("Inomarka", 3333);
+        System.out.println("User by car: " + queryByCarResult);
+        System.out.println("Id: " + queryByCarResult.getId());
+        System.out.println("First Name: " + queryByCarResult.getFirstName());
+        System.out.println("Last Name: " + queryByCarResult.getLastName());
+        System.out.println("Email: " + queryByCarResult.getEmail());
+        System.out.println();
+
         context.close();
     }
 }
